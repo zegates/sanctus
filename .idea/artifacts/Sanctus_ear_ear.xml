@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="Sanctus-ear:ear">
+    <output-path>$PROJECT_DIR$/Sanctus-ear/target</output-path>
+    <root id="archive" name="Sanctus-ear.ear">
+      <element id="artifact" artifact-name="Sanctus-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

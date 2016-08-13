@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="Sanctus-ejb:ejb">
+    <output-path>$PROJECT_DIR$/Sanctus-ejb/target</output-path>
+    <root id="archive" name="Sanctus-ejb.jar">
+      <element id="artifact" artifact-name="Sanctus-ejb:ejb exploded" />
+    </root>
+  </artifact>
+</component>

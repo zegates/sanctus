@@ -25,6 +25,7 @@
         <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" output-file-name="jboss-transaction-api_1.2_spec.jar" />
         <element id="file-copy" path="$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar" output-file-name="javassist.jar" />
         <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/hibernate-envers/4.3.7.Final/hibernate-envers-4.3.7.Final.jar" output-file-name="hibernate-envers.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" output-file-name="mysql-connector-java.jar" />
       </element>
     </root>
   </artifact>

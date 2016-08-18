@@ -4,27 +4,37 @@
  */
 package com.zegates.sanctus.entity;
 
+import javax.persistence.*;
+import java.util.List;
+
 /**
  *
  * @author Thilina
  */
-public enum Category {
+@Entity
+public class Category {
 
-    /**
-     *
-     */
-    Tire,
-    /**
-     *
-     */
-    Tube,
-    /**
-     *
-     */
-    Alloy_Wheel,
-    /**
-     *
-     */
-    Other_Retail,
-    Undifined;
+    @OneToMany(mappedBy = "construction")
+    private List<Item> items;
+    private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long catid;
+    private String name;
+
+    public Long getCatid() {
+        return catid;
+    }
+
+    public void setCatid(Long catid) {
+        this.catid = catid;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

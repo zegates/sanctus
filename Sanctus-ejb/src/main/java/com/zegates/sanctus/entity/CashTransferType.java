@@ -1,14 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.zegates.sanctus.entity;
 
 /**
- *
- * @author Sandaruwan
+ * Created by sandaruwan on 8/21/16.
  */
 public enum CashTransferType {
-
     Recieve, Transfer;
 }

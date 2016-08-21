@@ -14,7 +14,7 @@ import java.util.List;
 @Entity
 public class Category {
 
-    @OneToMany(mappedBy = "construction")
+    @OneToMany(mappedBy = "category")
     private List<Item> items;
     private static final long serialVersionUID = 1L;
     @Id
@@ -36,5 +36,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
     }
 }

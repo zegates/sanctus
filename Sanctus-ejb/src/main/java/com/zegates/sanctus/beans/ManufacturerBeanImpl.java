@@ -3,8 +3,8 @@ package com.zegates.sanctus.beans;
 import com.zegates.sanctus.entity.Manufacturer;
 import com.zegates.sanctus.remote.RemoteDBHandler;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaQuery;
@@ -14,6 +14,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
+@Stateless
 public class ManufacturerBeanImpl implements com.zegates.sanctus.beans.remote.ManufacturerBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

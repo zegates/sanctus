@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-public interface CachTransferBeanRemote {
+public interface CashTransferBeanRemote {
     boolean create(CashTransfer cashTransfer);
 
     void edit(CashTransfer cashTransfer);

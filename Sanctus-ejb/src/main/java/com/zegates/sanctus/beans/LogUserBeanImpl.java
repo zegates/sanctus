@@ -3,7 +3,7 @@ package com.zegates.sanctus.beans;
 import com.zegates.sanctus.entity.LogUser;
 import com.zegates.sanctus.remote.RemoteDBHandler;
 
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;
@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateful
+@Stateless
 public class LogUserBeanImpl implements com.zegates.sanctus.beans.remote.LogUserBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

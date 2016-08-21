@@ -23,6 +23,8 @@ public class CashTransfer implements Serializable {
     private double amount;
     private Date dateAdded;
     private Time timeAdded;
+
+    @Enumerated(EnumType.STRING)
     private CashTransferType cashTransferType;
     @ManyToOne
     private LogSession logSession;
@@ -67,6 +69,7 @@ public class CashTransfer implements Serializable {
         this.timeAdded = timeAdded;
     }
 
+    @Enumerated(EnumType.STRING)
     public CashTransferType getCashTransferType() {
         return cashTransferType;
     }

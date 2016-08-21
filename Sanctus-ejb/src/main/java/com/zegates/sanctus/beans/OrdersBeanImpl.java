@@ -5,7 +5,7 @@ import com.zegates.sanctus.entity.OrderDetail;
 import com.zegates.sanctus.entity.Orders;
 import com.zegates.sanctus.remote.RemoteDBHandler;
 
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateful
+@Stateless
 public class OrdersBeanImpl implements com.zegates.sanctus.beans.remote.OrdersBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

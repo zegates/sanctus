@@ -1,9 +1,9 @@
 package com.zegates.sanctus.beans;
 
-import com.zegates.sanctus.beans.remote.CachTransferBeanRemote;
+import com.zegates.sanctus.beans.remote.CashTransferBeanRemote;
 import com.zegates.sanctus.entity.CashTransfer;
 
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;
@@ -15,8 +15,8 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/14/16.
  */
-@Stateful
-public class CachTransferBeanImpl implements CachTransferBeanRemote {
+@Stateless
+public class CashTransferBeanImpl implements CashTransferBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")
     private EntityManager em;
@@ -117,5 +117,4 @@ public class CachTransferBeanImpl implements CachTransferBeanRemote {
         }
         return  -1;
     }
-
 }

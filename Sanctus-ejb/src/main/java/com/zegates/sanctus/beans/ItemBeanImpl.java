@@ -3,7 +3,7 @@ package com.zegates.sanctus.beans;
 import com.zegates.sanctus.beans.remote.ItemBeanRemote;
 import com.zegates.sanctus.entity.Item;
 
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;
@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/14/16.
  */
-@Stateful(name = "ItemBeanEJB")
+@Stateless(mappedName = "ItemBean")
 public class ItemBeanImpl implements ItemBeanRemote {
 
 

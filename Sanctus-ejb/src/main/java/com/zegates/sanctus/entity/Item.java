@@ -22,25 +22,31 @@ public class Item implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long iid;
     private String name;
-    @Enumerated(EnumType.STRING)
-    private TubeType tubeType;
+    @ManyToOne
+    private Metric metric;
     @ManyToOne
     private Manufacturer manufacturer;
-    @Enumerated(EnumType.STRING)
+    @ManyToOne
     private Category category;
 
     public Item() {
     }
 
-    public Item(List<SupplyOrderDetail> supplyOrderDetails, Long iid, String name, TubeType tubeType, Manufacturer manufacturer, Category category, VehicleType vehicleType, Metric construction) {
+    public Item(List<SupplyOrderDetail> supplyOrderDetails, Long iid, String name, Manufacturer manufacturer, Category category, Metric metric) {
         this.supplyOrderDetails = supplyOrderDetails;
         this.iid = iid;
         this.name = name;
-        this.tubeType = tubeType;
         this.manufacturer = manufacturer;
         this.category = category;
-        this.vehicleType = vehicleType;
-        this.construction = construction;
+        this.metric = metric;
+    }
+
+    public Metric getMetric() {
+        return metric;
+    }
+
+    public void setMetric(Metric metric) {
+        this.metric = metric;
     }
 
     public Category getCategory() {
@@ -58,10 +64,6 @@ public class Item implements Serializable {
     public void setSupplyOrderDetails(List<SupplyOrderDetail> supplyOrderDetails) {
         this.supplyOrderDetails = supplyOrderDetails;
     }
-    @ManyToOne
-    private VehicleType vehicleType;
-    @ManyToOne
-    private Metric construction;
 
     public Manufacturer getManufacturer() {
         return manufacturer;
@@ -77,30 +79,6 @@ public class Item implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public VehicleType getVehicleType() {
-        return vehicleType;
-    }
-
-    public void setVehicleType(VehicleType vehicleType) {
-        this.vehicleType = vehicleType;
-    }
-
-    public Metric getConstruction() {
-        return construction;
-    }
-
-    public void setConstruction(Metric construction) {
-        this.construction = construction;
-    }
-
-    public TubeType getTubeType() {
-        return tubeType;
-    }
-
-    public void setTubeType(TubeType tubeType) {
-        this.tubeType = tubeType;
     }
 
     public Long getIid() {

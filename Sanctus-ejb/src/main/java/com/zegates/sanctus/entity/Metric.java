@@ -15,7 +15,7 @@ import java.util.List;
 @Entity
 public class Metric implements Serializable {
 
-    @OneToMany(mappedBy = "construction")
+    @OneToMany(mappedBy = "metric")
     private List<Item> items;
     private static final long serialVersionUID = 1L;
     @Id

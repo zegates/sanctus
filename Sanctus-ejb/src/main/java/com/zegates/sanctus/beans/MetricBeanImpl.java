@@ -3,7 +3,7 @@ package com.zegates.sanctus.beans;
 import com.zegates.sanctus.beans.remote.MetricBeanRemote;
 import com.zegates.sanctus.entity.Metric;
 
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -15,10 +15,10 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateful
+@Stateless
 public class MetricBeanImpl implements MetricBeanRemote {
 
-    @PersistenceContext(unitName = "vozcopersist")
+    @PersistenceContext(unitName = "zegatesagency")
     private EntityManager em;
 
     @Override

@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateless
+@Stateless//(mappedName = "SupplyOrderDetailBean")
 public class SupplyOrderDetailBeanImpl implements com.zegates.sanctus.beans.remote.SupplyOrderDetailBeanRemote {
     @PersistenceContext(unitName = "zegatesagency")
     private EntityManager em;

@@ -18,7 +18,7 @@ import java.util.List;
 @WebService(endpointInterface = "com.zegates.sanctus.services.remote.ItemServiceRemote", serviceName = "ItemService", targetNamespace = "http://localhost/agency/item")//(serviceName = "ItemService", targetNamespace = "http://localhost/agency/item")
 public class ItemService implements ItemServiceRemote {
 
-    @EJB(mappedName = "ItemBean")
+    @EJB//(mappedName = "ItemBean")
     private ItemBeanRemote itemBean;
 
     @PostConstruct

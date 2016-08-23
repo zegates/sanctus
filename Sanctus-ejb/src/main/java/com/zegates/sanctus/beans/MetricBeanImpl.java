@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateless
+@Stateless(mappedName = "MetricBean")
 public class MetricBeanImpl implements MetricBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

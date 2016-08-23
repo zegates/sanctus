@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateless
+@Stateless//(mappedName = "ManufacturerBean")
 public class ManufacturerBeanImpl implements com.zegates.sanctus.beans.remote.ManufacturerBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")
@@ -78,7 +78,7 @@ public class ManufacturerBeanImpl implements com.zegates.sanctus.beans.remote.Ma
         return findManufacturerEntities(true, -1, -1);
     }
 
-    public List<Manufacturer> findManufacturerEntities(int maxResults, int firstResult) {
+    public List<Manufacturer> findManufacturerEntitiesLimit(int maxResults, int firstResult) {
         return findManufacturerEntities(false, maxResults, firstResult);
     }
 

@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateless
+@Stateless//(mappedName = "LogUserBean")
 public class LogUserBeanImpl implements com.zegates.sanctus.beans.remote.LogUserBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

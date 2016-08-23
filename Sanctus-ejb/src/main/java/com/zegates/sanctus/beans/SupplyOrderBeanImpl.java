@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateless
+@Stateless//(mappedName = "SupplyOrderBean")
 public class SupplyOrderBeanImpl implements SupplyOrderBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

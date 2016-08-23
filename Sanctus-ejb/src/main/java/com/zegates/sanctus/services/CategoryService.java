@@ -6,14 +6,18 @@ import com.zegates.sanctus.services.remote.CategoryServiceRemote;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.jws.WebService;
 import java.util.List;
 
 /**
  * Created by sandaruwan on 8/21/16.
  */
+@Stateless
+@WebService(endpointInterface = "com.zegates.sanctus.services.remote.CategoryServiceRemote", serviceName = "CategoryService", targetNamespace = "http://localhost/agency/category")
 public class CategoryService implements CategoryServiceRemote{
 
-    @EJB(mappedName = "CategoryBean")
+    @EJB//(mappedName = "CategoryBean")
     private CategoryBeanRemote categoryBean;
 
     @PostConstruct

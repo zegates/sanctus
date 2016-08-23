@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/14/16.
  */
-@Stateless(mappedName = "ItemBean")
+@Stateless//(mappedName = "ItemBean")
 public class ItemBeanImpl implements ItemBeanRemote {
 
 

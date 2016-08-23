@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by sandaruwan on 8/18/16.
  */
-@Stateless(mappedName = "CategoryBean")
+@Stateless//(mappedName = "CategoryBean")
 public class CategoryBeanImpl implements CategoryBeanRemote {
 
     @PersistenceContext(unitName = "zegatesagency")

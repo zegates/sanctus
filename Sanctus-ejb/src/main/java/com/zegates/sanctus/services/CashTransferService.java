@@ -21,11 +21,6 @@ public class CashTransferService implements CashTransferServiceRemote{
     @EJB
     private CashTransferBeanRemote cashTransferBean;
 
-    @PostConstruct
-    private void ejbInit(){
-
-    }
-
     @Override
     @WebMethod
     public boolean create(CashTransfer cashTransfer) {

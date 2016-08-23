@@ -21,7 +21,7 @@ public class SupplyOrder implements Serializable {
     private List<SupplyOrderDetail> supplyOrderDetails;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long soid;
     private Date dateAdded;
     private Time timeAdded;

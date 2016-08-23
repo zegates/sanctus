@@ -19,7 +19,7 @@ public class Item implements Serializable {
     private List<SupplyOrderDetail> supplyOrderDetails;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long iid;
     private String name;
     @ManyToOne

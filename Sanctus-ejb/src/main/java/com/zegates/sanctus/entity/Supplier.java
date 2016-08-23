@@ -21,7 +21,7 @@ public class Supplier implements Serializable {
     private List<SupplyOrder> supplyOrders;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long suid;
     private String name;
     private Date dateAdded;

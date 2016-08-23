@@ -6,8 +6,7 @@ package com.zegates.sanctus.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,16 +22,19 @@ public class LogSession implements Serializable {
     private List<Orders> orderss;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long seid;
-    private Date dateStarted;
-    private Time timeStarted;
 
-    public Time getTimeStarted() {
+    @Temporal(TemporalType.DATE)
+    private Date dateStarted;
+    @Temporal(TemporalType.TIME)
+    private Date timeStarted;
+
+    public Date getTimeStarted() {
         return timeStarted;
     }
 
-    public void setTimeStarted(Time timeStarted) {
+    public void setTimeStarted(Date timeStarted) {
         this.timeStarted = timeStarted;
     }
 
@@ -43,8 +45,10 @@ public class LogSession implements Serializable {
     public void setOrderss(List<Orders> orderss) {
         this.orderss = orderss;
     }
+    @Temporal(TemporalType.DATE)
     private Date dateEnded;
-    private Time timeEnded;
+    @Temporal(TemporalType.TIME)
+    private Date timeEnded;
     private double turnOver;
     @ManyToOne
     private LogUser logUser;
@@ -98,11 +102,11 @@ public class LogSession implements Serializable {
         this.dateEnded = dateEnded;
     }
 
-    public Time getTimeEnded() {
+    public Date getTimeEnded() {
         return timeEnded;
     }
 
-    public void setTimeEnded(Time timeEnded) {
+    public void setTimeEnded(Date timeEnded) {
         this.timeEnded = timeEnded;
     }
 

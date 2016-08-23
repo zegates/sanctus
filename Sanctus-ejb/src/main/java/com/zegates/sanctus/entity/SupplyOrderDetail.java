@@ -19,7 +19,7 @@ public class SupplyOrderDetail implements Serializable {
     private List<OrderDetail> orderDetails;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long sodid;
     private int qty;
     private int remainingQty;

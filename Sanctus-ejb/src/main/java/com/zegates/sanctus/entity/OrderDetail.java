@@ -16,7 +16,7 @@ public class OrderDetail implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long odid;
     private int qty;
     private double unitPrice;

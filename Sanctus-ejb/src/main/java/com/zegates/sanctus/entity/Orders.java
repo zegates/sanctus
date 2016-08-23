@@ -28,7 +28,7 @@ public class Orders implements Serializable {
     private List<OrderDetail> orderDetails;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long oid;
     private String custName;
     private String tpNo;

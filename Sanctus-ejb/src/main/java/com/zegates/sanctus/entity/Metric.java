@@ -19,7 +19,7 @@ public class Metric implements Serializable {
     private List<Item> items;
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long mid;
     private String name;
 

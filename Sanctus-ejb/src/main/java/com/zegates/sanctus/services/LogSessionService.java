@@ -29,19 +29,19 @@ public class LogSessionService implements LogSessionServiceRemote {
     @Override
     @WebMethod
     public void edit(LogSession logSession) {
-
+        logSessionBean.edit(logSession);
     }
 
     @Override
     @WebMethod
     public void destroy(Long id) {
-
+        logSessionBean.destroy(id);
     }
 
     @Override
     @WebMethod
     public List<LogSession> findLogSessionEntities() {
-        return null;
+        return logSessionBean.findLogSessionEntities();
     }
 
     @Override
@@ -52,11 +52,13 @@ public class LogSessionService implements LogSessionServiceRemote {
 
     @Override@WebMethod
     public LogSession findLogSession(Long id) {
-        return null;
+        LogSession logSession = logSessionBean.findLogSession(id);
+        logSession.setUuid(logSession.getSeid()+"");
+        return logSessionBean.findLogSession(id);
     }
 
     @Override@WebMethod
     public int getLogSessionCount() {
-        return 0;
+        return logSessionBean.getLogSessionCount();
     }
 }

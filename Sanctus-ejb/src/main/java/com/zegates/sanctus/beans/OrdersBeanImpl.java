@@ -79,7 +79,6 @@ public class OrdersBeanImpl implements com.zegates.sanctus.beans.remote.OrdersBe
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             Orders orders;
             orders = em.getReference(Orders.class, id);
             orders.getOid();
@@ -107,7 +106,6 @@ public class OrdersBeanImpl implements com.zegates.sanctus.beans.remote.OrdersBe
             }  catch (Exception ex) {
                 ex.printStackTrace();
             }
-            em.getTransaction().commit();
         } catch (Exception ex) {
             ex.printStackTrace();
         }

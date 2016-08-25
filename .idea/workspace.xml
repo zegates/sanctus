@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2bc16dd-8093-453e-871a-b9686e5ddc07" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_asm_2_6_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_core_2_6_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_moxy_2_6_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/containers/LogUserContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Sanctus_ear_ear_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Sanctus_ear_ear_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ear/Sanctus-ear.iml" afterPath="$PROJECT_DIR$/Sanctus-ear/Sanctus-ear.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/Sanctus-ejb.iml" afterPath="$PROJECT_DIR$/Sanctus-ejb/Sanctus-ejb.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/pom.xml" afterPath="$PROJECT_DIR$/Sanctus-ejb/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/CategoryBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/CategoryBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogUserBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogUserBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransfer.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Category.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Item.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogSession.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogSession.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogUser.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogUser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Manufacturer.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Manufacturer.java" />
@@ -15,7 +32,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Supplier.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Supplier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrder.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrderDetail.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrderDetail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogSessionService.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogSessionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogUserService.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogUserServiceRemote.java" afterPath="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogUserServiceRemote.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sanctus-web/Sanctus-web.iml" afterPath="$PROJECT_DIR$/Sanctus-web/Sanctus-web.iml" />
     </list>
     <ignored path="Sanctus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,21 +61,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LogSessionBeanImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java">
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Category.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteDBHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java">
+      <file leaf-file-name="LogSessionBeanImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6792453">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.6410959">
+              <caret line="98" column="45" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManufacturerBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Metric.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Metric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetricBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDetailBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#1613#1614#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrdersBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupplierBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupplyOrderBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+              <folding>
+                <element signature="e#6729#6730#0" expanded="true" />
+                <element signature="e#6789#6790#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupplyOrderDetailBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,15 +189,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/CashTransferServiceRemote.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/CategoryServiceRemote.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/SupplierBeanRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogSessionServiceRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/remote/ManufacturerBeanRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/ManufacturerServiceRemote.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogUserServiceRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/MetricServiceRemote.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/OrderDetailServiceRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/OrdersServiceRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/SupplyOrderDetailServiceRemote.java" />
@@ -99,19 +200,8 @@
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/OrderService.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/SupplierServiceRemote.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/CashTransferService.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogUserBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogUserService.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogSessionService.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/CategoryBeanImpl.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ItemBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/CategoryService.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/ItemService.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/ManufacturerService.java" />
@@ -121,19 +211,35 @@
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/SupplierService.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/SupplyOrderDetailService.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/SupplyOrderService.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogSession.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransfer.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Category.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Item.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogUser.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/pom.xml" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Manufacturer.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Metric.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Orders.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Supplier.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrder.java" />
         <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrderDetail.java" />
-        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransfer.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Supplier.java" />
+        <option value="/usr/lib/jvm/java-8-oracle/src.zip!/java/io/Serializable.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Orders.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrder.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogSession.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogUser.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/containers/LogUserContainer.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogUserServiceRemote.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogUserService.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogSessionService.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/CategoryBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogUserBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java" />
+        <option value="$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java" />
       </list>
     </option>
   </component>
@@ -156,9 +262,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1317" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -185,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,6 +339,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,7 +542,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -413,7 +576,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="containers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -451,13 +614,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus-ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus-ear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sanctus-ear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches">
         <subPane />
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -917,48 +1141,53 @@
       <workItem from="1471374074287" duration="1306000" />
       <workItem from="1471522234384" duration="13813000" />
       <workItem from="1471762692857" duration="16262000" />
-      <workItem from="1471921772148" duration="10834000" />
+      <workItem from="1471921772148" duration="17582000" />
+      <workItem from="1471981212586" duration="1002000" />
+      <workItem from="1472037917385" duration="1971000" />
+      <workItem from="1472101870606" duration="8486000" />
+      <workItem from="1472122652767" duration="7294000" />
+      <workItem from="1472133749716" duration="14715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46296000" />
+    <option name="totallyTimeSpent" value="86512000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-4" width="1317" height="772" extended-state="6" />
-    <editor active="false" />
+    <frame x="49" y="24" width="1317" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.50275373" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.50590086" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13910356" sideWeight="0.49724627" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.316847" sideWeight="0.49409914" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24884081" sideWeight="0.36939722" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29032257" sideWeight="0.54147464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23052715" sideWeight="0.54147464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940991" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940991" sideWeight="0.36939722" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29032257" sideWeight="0.45852536" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940991" sideWeight="0.36939722" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940991" sideWeight="0.49459043" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940991" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49724627" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -983,71 +1212,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/remote/MetricBeanRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/ManufacturerServiceRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/remote/ManufacturerBeanRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogUserServiceRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/MetricServiceRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/SupplyOrderDetailServiceRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/SupplyOrderServiceRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/OrdersServiceRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1060,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,15 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="50" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/remote/LogSessionBeanRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,81 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/CategoryBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ItemBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogUserBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4754717">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,16 +1277,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,7 +1303,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1270,10 +1340,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogSessionService.java">
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33962265">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.6792453">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Manufacturer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41935483">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7037036">
+          <caret line="115" column="76" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransferType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.044226043">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1281,7 +1381,265 @@
     <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1912#1913#0" expanded="false" />
+            <element signature="e#1944#1945#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/META-INF/application.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6230366">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6701571">
+          <caret line="169" column="1" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ear/src/main/application/META-INF/Sanctus-ds.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1570248">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/containers/LogUserContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/remote/LogUserServiceRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61025643">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogSessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/remote/LogSessionBeanRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/services/LogUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="125" column="15" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/CategoryBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ItemBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogUserBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/ManufacturerBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/MetricBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrderDetailBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#1613#1614#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/OrdersBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplierBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="e#6729#6730#0" expanded="true" />
+            <element signature="e#6789#6790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/SupplyOrderDetailBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Metric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1289,113 +1647,15 @@
     <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5861386">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/LogUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42772278">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Manufacturer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47524753">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Metric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32079208">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/OrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48679245">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4264151">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.554717">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.554717">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/SupplyOrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3509434">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/entity/CashTransferType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17821783">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/beans/LogSessionBeanImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sanctus-ejb/src/main/java/com/zegates/sanctus/remote/RemoteDBHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6792453">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.6410959">
+          <caret line="98" column="45" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
           <folding />
         </state>
       </provider>

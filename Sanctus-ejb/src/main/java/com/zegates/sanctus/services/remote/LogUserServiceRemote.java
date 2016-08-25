@@ -1,5 +1,6 @@
 package com.zegates.sanctus.services.remote;
 
+import com.zegates.sanctus.containers.LogUserContainer;
 import com.zegates.sanctus.entity.LogUser;
 
 import javax.jws.WebMethod;
@@ -24,7 +25,7 @@ public interface LogUserServiceRemote {
     @WebMethod
     List<LogUser> findLogUserEntitiesLimit(int maxResults, int firstResult);
     @WebMethod
-    LogUser findLogUser(Long id);
+    LogUserContainer findLogUser(Long id);
     @WebMethod
     int getLogUserCount();
 }

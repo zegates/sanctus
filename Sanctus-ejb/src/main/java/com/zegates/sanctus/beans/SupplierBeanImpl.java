@@ -31,9 +31,7 @@ public class SupplierBeanImpl implements com.zegates.sanctus.beans.remote.Suppli
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(supplier);
-            em.getTransaction().commit();
             /**
              * Merge the Supplier
              */
@@ -81,7 +79,6 @@ public class SupplierBeanImpl implements com.zegates.sanctus.beans.remote.Suppli
 //            em.getTransaction().commit();
 
             em = getEntityManager();
-            em.getTransaction().begin();
             Supplier persistentSupplier = em.find(Supplier.class, supplier.getSuid());
             List<SupplyOrder> supplyOrdersOld = persistentSupplier.getSupplyOrders();
             List<SupplyOrder> supplyOrdersNew = supplier.getSupplyOrders();
@@ -110,7 +107,6 @@ public class SupplierBeanImpl implements com.zegates.sanctus.beans.remote.Suppli
                     }
                 }
             }
-            em.getTransaction().commit();
 
         }  catch (Exception e){
             e.printStackTrace();
@@ -135,7 +131,6 @@ public class SupplierBeanImpl implements com.zegates.sanctus.beans.remote.Suppli
 
 
             em = getEntityManager();
-            em.getTransaction().begin();
             Supplier supplier;
                 supplier = em.getReference(Supplier.class, id);
                 supplier.getSuid();
@@ -146,7 +141,6 @@ public class SupplierBeanImpl implements com.zegates.sanctus.beans.remote.Suppli
                 supplyOrdersSupplyOrder = em.merge(supplyOrdersSupplyOrder);
             }
             em.remove(supplier);
-            em.getTransaction().commit();
 
         } catch (Exception e){
             e.printStackTrace();

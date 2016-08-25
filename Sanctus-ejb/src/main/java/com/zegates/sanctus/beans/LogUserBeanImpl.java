@@ -30,9 +30,7 @@ public class LogUserBeanImpl implements com.zegates.sanctus.beans.remote.LogUser
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(logUser);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("INSERT INTO loguser (UID, ADDRESS, DATEADDED, NAME, PW, TIMEADDED, TPNO, USERNAME) "
                         + "VALUES('" + logUser.getUid() + "', '" + logUser.getAddress() + "',"
@@ -47,14 +45,13 @@ public class LogUserBeanImpl implements com.zegates.sanctus.beans.remote.LogUser
         }
     }
 
+
     @Override
     public void edit(LogUser logUser){
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             logUser = em.merge(logUser);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("UPDATE loguser SET ADDRESS='" + logUser.getAddress() + "', "
                         + "DATEADDED='" + logUser.getDateAdded() + "', NAME='" + logUser.getName() + "', "
@@ -72,13 +69,11 @@ public class LogUserBeanImpl implements com.zegates.sanctus.beans.remote.LogUser
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             LogUser logUser;
             logUser = em.getReference(LogUser.class, id);
             logUser.getUid();
 
             em.remove(logUser);
-            em.getTransaction().commit();
         } catch (EntityNotFoundException enfe) {
             enfe.printStackTrace();
         }

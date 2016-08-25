@@ -31,9 +31,7 @@ public class CategoryBeanImpl implements CategoryBeanRemote {
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(category);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("INSERT INTO category (NAME,CID) VALUES('" + category.getName() + "','" + category.getCatid() + "')");
             } catch (Exception e) {
@@ -48,9 +46,7 @@ public class CategoryBeanImpl implements CategoryBeanRemote {
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             category = em.merge(category);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("UPDATE category SET NAME='" + category.getName() + "' WHERE CATID='" + category.getCatid() + "' ");
             } catch (Exception e) {
@@ -67,12 +63,10 @@ public class CategoryBeanImpl implements CategoryBeanRemote {
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             Category category;
             category = em.getReference(Category.class, id);
             category.getCatid();
             em.remove(category);
-            em.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
         }

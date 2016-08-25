@@ -4,10 +4,11 @@
  */
 package com.zegates.sanctus.entity;
 
+import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -18,14 +19,17 @@ import java.util.List;
 public class Supplier implements Serializable {
 
     @OneToMany(mappedBy = "supplier")
+    @XmlInverseReference(mappedBy="supplier")
     private List<SupplyOrder> supplyOrders;
     private static final long serialVersionUID = 1L;
     @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long suid;
     private String name;
+    @Temporal(TemporalType.DATE)
     private Date dateAdded;
-    private Time timeAdded;
+    @Temporal(TemporalType.TIME)
+    private Date timeAdded;
     private String address;
     private String tpno;
     private String compName;
@@ -63,11 +67,11 @@ public class Supplier implements Serializable {
         this.dateAdded = dateAdded;
     }
 
-    public Time getTimeAdded() {
+    public Date getTimeAdded() {
         return timeAdded;
     }
 
-    public void setTimeAdded(Time timeAdded) {
+    public void setTimeAdded(Date timeAdded) {
         this.timeAdded = timeAdded;
     }
 

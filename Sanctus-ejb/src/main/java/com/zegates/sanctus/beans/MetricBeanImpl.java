@@ -57,7 +57,6 @@ public class MetricBeanImpl implements MetricBeanRemote {
 //    @Override
     @Override
     public List<Metric> findMetrics(boolean all, int maxResults, int firstResult)  {
-        try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
             cq.select(cq.from(Metric.class));
             Query q = em.createQuery(cq);
@@ -66,22 +65,17 @@ public class MetricBeanImpl implements MetricBeanRemote {
                 q.setFirstResult(firstResult);
             }
             return q.getResultList();
-        } finally {
-            em.close();
-        }
+
     }
 
     @Override
     public int getMetricCount() {
-        try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
             Root<Metric> rt = cq.from(Metric.class);
             cq.select(em.getCriteriaBuilder().count(rt));
             Query q = em.createQuery(cq);
             return ((Long) q.getSingleResult()).intValue();
-        } finally {
-            em.close();
-        }
+
     }
 
     @Override
@@ -99,6 +93,7 @@ public class MetricBeanImpl implements MetricBeanRemote {
             return 1L;
         }
         return 1L;
+
     }
 
 }

@@ -31,11 +31,11 @@ public class LogSessionBeanImpl implements com.zegates.sanctus.beans.remote.LogS
             em.persist(logSession);
 
             try {
-                RemoteDBHandler.setData("INSERT INTO logsession (SEID, DATESTARTED, "
-                        + "FINALISED, TIMESTARTED, LOGUSER_UID) VALUES("
-                        + "'" + logSession.getSeid() + "','" + logSession.getDateStarted() + "',"
-                        + "'" + (logSession.isFinalised() ? 1 : 0) + "', "
-                        + "'" + logSession.getTimeStarted() + "','" + logSession.getLogUser().getUid() + "')");
+//                RemoteDBHandler.setData("INSERT INTO logsession (SEID, DATESTARTED, "
+//                        + "FINALISED, TIMESTARTED, LOGUSER_UID) VALUES("
+//                        + "'" + logSession.getSeid() + "','" + logSession.getDateStarted() + "',"
+//                        + "'" + (logSession.isFinalised() ? 1 : 0) + "', "
+//                        + "'" + logSession.getTimeStarted() + "','" + logSession.getLogUser().getUid() + "')");
             } catch (Exception ce) {
                 ce.printStackTrace();
             }
@@ -73,13 +73,11 @@ public class LogSessionBeanImpl implements com.zegates.sanctus.beans.remote.LogS
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             LogSession logSession;
                 logSession = em.getReference(LogSession.class, id);
                 logSession.getSeid();
 
             em.remove(logSession);
-            em.getTransaction().commit();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -97,41 +95,35 @@ public class LogSessionBeanImpl implements com.zegates.sanctus.beans.remote.LogS
 
     private List<LogSession> findLogSessionEntities(boolean all, int maxResults, int firstResult) {
         EntityManager em = getEntityManager();
-        try {
-            CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
-            cq.select(cq.from(LogSession.class));
-            Query q = em.createQuery(cq);
-            if (!all) {
-                q.setMaxResults(maxResults);
-                q.setFirstResult(firstResult);
-            }
-            return q.getResultList();
-        } finally {
-            em.close();
+        CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
+        cq.select(cq.from(LogSession.class));
+        Query q = em.createQuery(cq);
+        if (!all) {
+            q.setMaxResults(maxResults);
+            q.setFirstResult(firstResult);
         }
+        return q.getResultList();
+
     }
 
     @Override
     public LogSession findLogSession(Long id) {
         EntityManager em = getEntityManager();
-        try {
-            return em.find(LogSession.class, id);
-        } finally {
-            em.close();
-        }
+        System.out.println(" Find Log Session "+id);
+        LogSession logSession = em.find(LogSession.class, id);
+        logSession.setUuid(logSession.getSeid()+"");
+        logSession.getLogUser().setUuid(logSession.getLogUser().getUid()+"");
+        return em.find(LogSession.class, id);
     }
 
     @Override
     public int getLogSessionCount() {
         EntityManager em = getEntityManager();
-        try {
-            CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
-            Root<LogSession> rt = cq.from(LogSession.class);
-            cq.select(em.getCriteriaBuilder().count(rt));
-            Query q = em.createQuery(cq);
-            return ((Long) q.getSingleResult()).intValue();
-        } finally {
-            em.close();
-        }
+        CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
+        Root<LogSession> rt = cq.from(LogSession.class);
+        cq.select(em.getCriteriaBuilder().count(rt));
+        Query q = em.createQuery(cq);
+        return ((Long) q.getSingleResult()).intValue();
+
     }
 }

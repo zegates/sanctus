@@ -5,6 +5,7 @@
 package com.zegates.sanctus.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -14,15 +15,33 @@ import java.util.List;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class LogSession implements Serializable {
 
+    @XmlAttribute
+    @XmlID	   			// should be unique across all entities.
+    @Transient
+    private String uuid;
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
     @OneToMany(mappedBy = "logSession")
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="logSession")
     private List<SupplyOrder> supplyOrders;
     @OneToMany(mappedBy = "logSession")
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="logSession")
+//    @XmlTransient
     private List<Orders> orderss;
     private static final long serialVersionUID = 1L;
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long seid;
 
     @Temporal(TemporalType.DATE)
@@ -51,6 +70,10 @@ public class LogSession implements Serializable {
     private Date timeEnded;
     private double turnOver;
     @ManyToOne
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="logSession")
+//    @XmlTransient
+    @XmlIDREF
     private LogUser logUser;
     private boolean finalised;
 
@@ -83,6 +106,7 @@ public class LogSession implements Serializable {
     }
 
     public void setSeid(Long seid) {
+        this.uuid = seid + "";
         this.seid = seid;
     }
 

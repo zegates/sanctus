@@ -4,6 +4,8 @@
  */
 package com.zegates.sanctus.entity;
 
+import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.List;
 public class Metric implements Serializable {
 
     @OneToMany(mappedBy = "metric")
+    @XmlInverseReference(mappedBy="metric")
     private List<Item> items;
     private static final long serialVersionUID = 1L;
     @Id

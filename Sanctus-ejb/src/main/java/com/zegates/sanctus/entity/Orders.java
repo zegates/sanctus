@@ -5,9 +5,11 @@
 package com.zegates.sanctus.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlIDREF;
 import java.io.Serializable;
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,6 +17,7 @@ import java.util.List;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Orders implements Serializable {
 
     public List<OrderDetail> getOrderDetails() {
@@ -25,6 +28,8 @@ public class Orders implements Serializable {
         this.orderDetails = orderDetails;
     }
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+//    @XmlInverseReference(mappedBy="order")
+//    @XmlElement
     private List<OrderDetail> orderDetails;
     private static final long serialVersionUID = 1L;
     @Id
@@ -32,8 +37,10 @@ public class Orders implements Serializable {
     private Long oid;
     private String custName;
     private String tpNo;
+    @Temporal(TemporalType.DATE)
     private Date dateAdded;
-    private Time timeAdded;
+    @Temporal(TemporalType.TIME)
+    private Date timeAdded;
     private String address;
     private double total;
     private double discount;
@@ -56,7 +63,7 @@ public class Orders implements Serializable {
         return paidAmount;
     }
 
-    public Orders(List<OrderDetail> orderDetails, Long oid, String custName, String tpNo, Date dateAdded, Time timeAdded, String address, double total, double discount, double paidAmount, LogSession logSession) {
+    public Orders(List<OrderDetail> orderDetails, Long oid, String custName, String tpNo, Date dateAdded, Date timeAdded, String address, double total, double discount, double paidAmount, LogSession logSession) {
         this.orderDetails = orderDetails;
         this.oid = oid;
         this.custName = custName;
@@ -73,7 +80,23 @@ public class Orders implements Serializable {
     public Orders() {
     }
     @ManyToOne
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="orderss")
+    @XmlIDREF
     private LogSession logSession;
+//
+//    @XmlAttribute
+//    @XmlID                    // should be unique across all entities.
+//    @Transient
+//    private String uuid;
+//
+//    public String getUuid() {
+//        return uuid;
+//    }
+//
+//    public void setUuid(UUID uuid) {
+//        this.uuid = uuid.toString();
+//    }
 
     public LogSession getLogSession() {
         return logSession;
@@ -89,7 +112,9 @@ public class Orders implements Serializable {
 
     public void setOid(Long oid) {
         this.oid = oid;
+//        this.uuid = oid + "";
     }
+
 
     public String getCustName() {
         return custName;
@@ -115,11 +140,11 @@ public class Orders implements Serializable {
         this.dateAdded = dateAdded;
     }
 
-    public Time getTimeAdded() {
+    public Date getTimeAdded() {
         return timeAdded;
     }
 
-    public void setTimeAdded(Time timeAdded) {
+    public void setTimeAdded(Date timeAdded) {
         this.timeAdded = timeAdded;
     }
 

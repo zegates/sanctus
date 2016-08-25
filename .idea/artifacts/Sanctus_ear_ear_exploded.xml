@@ -26,6 +26,11 @@
         <element id="file-copy" path="$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar" output-file-name="javassist.jar" />
         <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/hibernate-envers/4.3.7.Final/hibernate-envers-4.3.7.Final.jar" output-file-name="hibernate-envers.jar" />
         <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" output-file-name="mysql-connector-java.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/eclipse/persistence/org.eclipse.persistence.moxy/2.6.3/org.eclipse.persistence.moxy-2.6.3.jar" output-file-name="org.eclipse.persistence.moxy.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/eclipse/persistence/org.eclipse.persistence.core/2.6.3/org.eclipse.persistence.core-2.6.3.jar" output-file-name="org.eclipse.persistence.core.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/eclipse/persistence/org.eclipse.persistence.asm/2.6.3/org.eclipse.persistence.asm-2.6.3.jar" output-file-name="org.eclipse.persistence.asm.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" output-file-name="validation-api.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar" output-file-name="javax.json.jar" />
       </element>
     </root>
   </artifact>

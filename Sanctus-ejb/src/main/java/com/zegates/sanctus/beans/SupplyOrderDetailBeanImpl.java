@@ -27,12 +27,9 @@ public class SupplyOrderDetailBeanImpl implements com.zegates.sanctus.beans.remo
     @Override
     public void create(SupplyOrderDetail supplyOrderDetail) {
         EntityManager em = null;
-        try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(supplyOrderDetail);
             em.merge(supplyOrderDetail);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("INSERT INTO `supplyorderdetail` (`SODID`, `BUYINGPRICE`,"
                         + " `QTY`, `REMAININGQTY`, `SELLINGPRICE`, `ITEM_IID`, `SUPPLYORDER_SOID`)"
@@ -41,13 +38,10 @@ public class SupplyOrderDetailBeanImpl implements com.zegates.sanctus.beans.remo
                         + "'" + supplyOrderDetail.getSellingPrice() + "', '" + supplyOrderDetail.getItem().getIid() + "', "
                         + "'" + supplyOrderDetail.getSupplyOrder().getSoid() + "')");
             } catch (Exception ce) {
+                ce.printStackTrace();
             }
 
-        } finally {
-            if (em != null) {
-                em.close();
-            }
-        }
+
     }
 
     @Override
@@ -55,9 +49,7 @@ public class SupplyOrderDetailBeanImpl implements com.zegates.sanctus.beans.remo
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.merge(supplyOrderDetail);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("UPDATE supplyorderdetail SET BUYINGPRICE='" + supplyOrderDetail.getBuyingPrice() + "'"
                         + ", QTY='" + supplyOrderDetail.getQty() + "', REMAININGQTY='" + supplyOrderDetail.getRemainingQty() + "', "
@@ -75,13 +67,11 @@ public class SupplyOrderDetailBeanImpl implements com.zegates.sanctus.beans.remo
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             SupplyOrderDetail supplyOrderDetail;
                 supplyOrderDetail = em.getReference(SupplyOrderDetail.class, id);
                 supplyOrderDetail.getSodid();
 
             em.remove(supplyOrderDetail);
-            em.getTransaction().commit();
         } catch (Exception e){
             e.printStackTrace();
         }

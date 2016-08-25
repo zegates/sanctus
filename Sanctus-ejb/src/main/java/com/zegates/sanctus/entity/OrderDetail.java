@@ -4,6 +4,8 @@
  */
 package com.zegates.sanctus.entity;
 
+import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -21,8 +23,10 @@ public class OrderDetail implements Serializable {
     private int qty;
     private double unitPrice;
     @ManyToOne
+    @XmlInverseReference(mappedBy="orderDetails")
     private SupplyOrderDetail supplyOrderDetail;
     @ManyToOne
+    @XmlInverseReference(mappedBy="orderDetails")
     private Orders order;
 
     public Orders getOrder() {

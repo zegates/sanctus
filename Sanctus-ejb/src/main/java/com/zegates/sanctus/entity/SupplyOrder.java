@@ -5,9 +5,11 @@
 package com.zegates.sanctus.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlIDREF;
 import java.io.Serializable;
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,22 +17,45 @@ import java.util.List;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class SupplyOrder implements Serializable {
 
     @OneToMany(mappedBy = "supplyOrder", cascade = CascadeType.ALL)
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="supplyOrder")
     private List<SupplyOrderDetail> supplyOrderDetails;
     private static final long serialVersionUID = 1L;
     @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long soid;
+    @Temporal(TemporalType.DATE)
     private Date dateAdded;
-    private Time timeAdded;
+    @Temporal(TemporalType.TIME)
+    private Date timeAdded;
     private double discount;
     private double total;
     @ManyToOne
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="supplyOrders")
     private Supplier supplier;
     @ManyToOne
+//    @XmlElement
+//    @XmlInverseReference(mappedBy="supplyOrders")
+    @XmlIDREF
     private LogSession logSession;
+//
+//    @XmlAttribute
+//    @XmlID                    // should be unique across all entities.
+//    @Transient
+//    private String uuid;
+//
+//    public String getUuid() {
+//        return uuid;
+//    }
+//
+//    public void setUuid(UUID uuid) {
+//        this.uuid = uuid.toString();
+//    }
 
     public List<SupplyOrderDetail> getSupplyOrderDetails() {
         return supplyOrderDetails;
@@ -64,11 +89,11 @@ public class SupplyOrder implements Serializable {
         this.dateAdded = dateAdded;
     }
 
-    public Time getTimeAdded() {
+    public Date getTimeAdded() {
         return timeAdded;
     }
 
-    public void setTimeAdded(Time timeAdded) {
+    public void setTimeAdded(Date timeAdded) {
         this.timeAdded = timeAdded;
     }
 
@@ -94,6 +119,7 @@ public class SupplyOrder implements Serializable {
 
     public void setSoid(Long soid) {
         this.soid = soid;
+//        this.uuid = soid + "";
     }
 
     @Override

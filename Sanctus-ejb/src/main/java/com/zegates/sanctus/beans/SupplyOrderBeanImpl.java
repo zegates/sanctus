@@ -34,17 +34,13 @@ public class SupplyOrderBeanImpl implements SupplyOrderBeanRemote {
     public void create(SupplyOrder supplyOrder){
         EntityManager em = null;
         //System.out.println("Supply Order");
-        try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(supplyOrder);
 
-            em.getTransaction().commit();
             /**
              * updates log session
              */
             em = getEntityManager();
-            em.getTransaction().begin();
             Supplier supplier = supplyOrder.getSupplier();
             if (supplier != null) {
                 supplier = em.getReference(supplier.getClass(), supplier.getSuid());
@@ -83,7 +79,6 @@ public class SupplyOrderBeanImpl implements SupplyOrderBeanRemote {
                     oldSupplyOrderOfSupplyOrderDetailsSupplyOrderDetail = em.merge(oldSupplyOrderOfSupplyOrderDetailsSupplyOrderDetail);
                 }
             }
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("INSERT INTO `supplyorder` (`SOID`, `DATEADDED`, "
                         + "`DISCOUNT`, `TIMEADDED`, `TOTAL`, `LOGSESSION_SEID`,"
@@ -104,12 +99,8 @@ public class SupplyOrderBeanImpl implements SupplyOrderBeanRemote {
                             + "'" + supplyOrderDetail.getSupplyOrder().getSoid() + "')");
                 }
             } catch (Exception ce) {
+                ce.printStackTrace();
             }
-        } finally {
-            if (em != null) {
-                em.close();
-            }
-        }
     }
 
     @Override
@@ -117,9 +108,7 @@ public class SupplyOrderBeanImpl implements SupplyOrderBeanRemote {
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.merge(supplyOrder);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("UPDATE supplyorder SET DATEADDED='" + supplyOrder.getDateAdded() + "', "
                         + " DISCOUNT='" + supplyOrder.getDiscount() + "', TIMEADDED='" + supplyOrder.getTimeAdded() + "', "
@@ -138,13 +127,11 @@ public class SupplyOrderBeanImpl implements SupplyOrderBeanRemote {
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             SupplyOrder supplyOrder;
                 supplyOrder = em.getReference(SupplyOrder.class, id);
                 supplyOrder.getSoid();
 
             em.remove(supplyOrder);
-            em.getTransaction().commit();
         } catch (Exception e){
             e.printStackTrace();
         }

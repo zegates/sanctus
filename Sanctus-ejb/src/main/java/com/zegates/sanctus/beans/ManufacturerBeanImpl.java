@@ -28,9 +28,7 @@ public class ManufacturerBeanImpl implements com.zegates.sanctus.beans.remote.Ma
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(manufacturer);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("INSERT INTO manufacturer (MANUID,NAME) VALUES('" + manufacturer.getManuid() + "','" + manufacturer.getName() + "')");
             } catch (Exception e) {
@@ -45,9 +43,7 @@ public class ManufacturerBeanImpl implements com.zegates.sanctus.beans.remote.Ma
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             manufacturer = em.merge(manufacturer);
-            em.getTransaction().commit();
             try {
                 RemoteDBHandler.setData("UPDATE manufacturer SET NAME='" + manufacturer.getName() + "' WHERE"
                         + " MANUID='" + manufacturer.getManuid() + "'");
@@ -62,13 +58,11 @@ public class ManufacturerBeanImpl implements com.zegates.sanctus.beans.remote.Ma
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             Manufacturer manufacturer;
             manufacturer = em.getReference(Manufacturer.class, id);
             manufacturer.getManuid();
 
             em.remove(manufacturer);
-            em.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
         }

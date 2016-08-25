@@ -25,16 +25,8 @@ public class OrderDetailBeanImpl implements com.zegates.sanctus.beans.remote.Ord
     @Override
     public void create(OrderDetail orderDetail) {
         EntityManager em = null;
-        try {
             em = getEntityManager();
-            em.getTransaction().begin();
             em.persist(orderDetail);
-            em.getTransaction().commit();
-        } finally {
-            if (em != null) {
-                em.close();
-            }
-        }
     }
 
     @Override
@@ -42,9 +34,7 @@ public class OrderDetailBeanImpl implements com.zegates.sanctus.beans.remote.Ord
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             orderDetail = em.merge(orderDetail);
-            em.getTransaction().commit();
         } catch (Exception ex) {
            ex.printStackTrace();
         }
@@ -55,13 +45,11 @@ public class OrderDetailBeanImpl implements com.zegates.sanctus.beans.remote.Ord
         EntityManager em = null;
         try {
             em = getEntityManager();
-            em.getTransaction().begin();
             OrderDetail orderDetail;
                 orderDetail = em.getReference(OrderDetail.class, id);
                 orderDetail.getOdid();
 
             em.remove(orderDetail);
-            em.getTransaction().commit();
         } catch (Exception ex) {
             ex.printStackTrace();
         }

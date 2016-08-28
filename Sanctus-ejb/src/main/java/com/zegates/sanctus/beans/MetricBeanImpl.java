@@ -96,4 +96,21 @@ public class MetricBeanImpl implements MetricBeanRemote {
 
     }
 
+    @Override
+    public Metric findMetricForName(String name) {
+        String ejbql = "SELECT m from Metric m WHERE m.name LIKE :pattern";
+        Query query = em.createQuery(ejbql);
+        StringBuilder sb = new StringBuilder();
+        sb.append("%");
+        sb.append(name);
+        sb.append("%");
+        query.setParameter("pattern", sb.toString());
+        List<Metric> resultList = query.getResultList();
+        if (resultList != null && resultList.size() > 0) {
+            return resultList.get(0);
+        } else {
+            return null;
+        }
+    }
+
 }

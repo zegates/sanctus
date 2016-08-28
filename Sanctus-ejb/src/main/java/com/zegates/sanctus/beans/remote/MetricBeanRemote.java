@@ -22,4 +22,6 @@ public interface MetricBeanRemote {
     int getMetricCount();
 
     long getLatesOrdersID();
+
+    Metric findMetricForName(String name);
 }

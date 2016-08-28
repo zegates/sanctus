@@ -55,4 +55,8 @@ public class MetricService implements MetricServiceRemote {
     public long getLastesOrdersID() {
         return metricBean.getLatesOrdersID();
     }
+
+    public Metric findMetricForName(String name) {
+        return metricBean.findMetricForName(name);
+    }
 }

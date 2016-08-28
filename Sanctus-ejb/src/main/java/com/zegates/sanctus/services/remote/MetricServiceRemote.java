@@ -25,4 +25,6 @@ public interface MetricServiceRemote {
     int getMetricCount();
     @WebMethod
     long getLastesOrdersID();
+    @WebMethod
+    Metric findMetricForName(String name);
 }

@@ -15,14 +15,15 @@ import java.util.List;
  * Created by sandaruwan on 8/13/16.
  */
 @Stateless
-@WebService(endpointInterface = "com.zegates.sanctus.services.remote.ItemServiceRemote", serviceName = "ItemService", targetNamespace = "http://localhost/agency/item")//(serviceName = "ItemService", targetNamespace = "http://localhost/agency/item")
+@WebService(endpointInterface = "com.zegates.sanctus.services.remote.ItemServiceRemote", serviceName = "ItemService", targetNamespace = "http://localhost/agency/item")
+//(serviceName = "ItemService", targetNamespace = "http://localhost/agency/item")
 public class ItemService implements ItemServiceRemote {
 
     @EJB//(mappedName = "ItemBean")
     private ItemBeanRemote itemBean;
 
     @PostConstruct
-    private void ejbInit(){
+    private void ejbInit() {
 
     }
 
@@ -53,6 +54,12 @@ public class ItemService implements ItemServiceRemote {
     @Override
     @WebMethod
     public List<Item> findItemEntities() {
+        List<Item> items = itemBean.findItemEntities();
+        System.out.println("Items");
+        for (Item i :items) {
+            System.out.println("I " + i.getUuid());
+        }
+
         return itemBean.findItemEntities();
     }
 

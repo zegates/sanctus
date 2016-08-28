@@ -4,9 +4,11 @@
  */
 package com.zegates.sanctus.entity;
 
-import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 /**
@@ -14,7 +16,23 @@ import java.io.Serializable;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class OrderDetail implements Serializable {
+
+    @XmlAttribute
+    @XmlID                    // should be unique across all entities.
+    @Transient
+    private String uuid;
+
+    public String getUuid() {
+        if(uuid == null)
+            return getOdid() + "";
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -23,10 +41,12 @@ public class OrderDetail implements Serializable {
     private int qty;
     private double unitPrice;
     @ManyToOne
-    @XmlInverseReference(mappedBy="orderDetails")
+    @XmlIDREF
+//    @XmlInverseReference(mappedBy="orderDetails")
     private SupplyOrderDetail supplyOrderDetail;
     @ManyToOne
-    @XmlInverseReference(mappedBy="orderDetails")
+    @XmlIDREF
+//    @XmlInverseReference(mappedBy="orderDetails")
     private Orders order;
 
     public Orders getOrder() {

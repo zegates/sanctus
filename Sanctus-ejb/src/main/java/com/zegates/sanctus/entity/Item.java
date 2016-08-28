@@ -5,6 +5,7 @@
 package com.zegates.sanctus.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -13,7 +14,23 @@ import java.util.List;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Item implements Serializable {
+
+    @XmlAttribute
+    @XmlID                    // should be unique across all entities.
+    @Transient
+    private String uuid;
+
+    public String getUuid() {
+        if(uuid == null)
+            return getIid() + "";
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
 
     @OneToMany(mappedBy = "item")
     private List<SupplyOrderDetail> supplyOrderDetails;
@@ -23,10 +40,13 @@ public class Item implements Serializable {
     private Long iid;
     private String name;
     @ManyToOne
+    @XmlIDREF
     private Metric metric;
     @ManyToOne
+    @XmlIDREF
     private Manufacturer manufacturer;
     @ManyToOne
+    @XmlIDREF
     private Category category;
 
     public Item() {

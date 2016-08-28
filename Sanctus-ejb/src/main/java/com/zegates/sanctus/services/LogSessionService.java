@@ -47,7 +47,7 @@ public class LogSessionService implements LogSessionServiceRemote {
     @Override
     @WebMethod
     public List<LogSession> findLogSessionEntitiesLimit(int maxResults, int firstResult) {
-        return null;
+        return logSessionBean.findLogSessionEntities(maxResults, firstResult);
     }
 
     @Override@WebMethod

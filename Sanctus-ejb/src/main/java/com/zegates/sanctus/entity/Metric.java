@@ -4,9 +4,14 @@
  */
 package com.zegates.sanctus.entity;
 
-import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Transient;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlID;
 import java.io.Serializable;
 import java.util.List;
 
@@ -15,10 +20,26 @@ import java.util.List;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Metric implements Serializable {
 
+    @XmlAttribute
+    @XmlID                    // should be unique across all entities.
+    @Transient
+    private String uuid;
+
+    public String getUuid() {
+        if(uuid == null)
+            return getMid() + "";
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
     @OneToMany(mappedBy = "metric")
-    @XmlInverseReference(mappedBy="metric")
+//    @XmlInverseReference(mappedBy="metric")
     private List<Item> items;
     private static final long serialVersionUID = 1L;
     @Id

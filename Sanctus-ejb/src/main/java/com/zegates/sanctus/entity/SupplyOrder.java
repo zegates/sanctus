@@ -5,9 +5,7 @@
 package com.zegates.sanctus.entity;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlIDREF;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -19,6 +17,21 @@ import java.util.List;
 @Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SupplyOrder implements Serializable {
+
+    @XmlAttribute
+    @XmlID                    // should be unique across all entities.
+    @Transient
+    private String uuid;
+
+    public String getUuid() {
+        if(uuid == null)
+            return getSoid() + "";
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
 
     @OneToMany(mappedBy = "supplyOrder", cascade = CascadeType.ALL)
 //    @XmlElement
@@ -37,6 +50,7 @@ public class SupplyOrder implements Serializable {
     @ManyToOne
 //    @XmlElement
 //    @XmlInverseReference(mappedBy="supplyOrders")
+    @XmlIDREF
     private Supplier supplier;
     @ManyToOne
 //    @XmlElement

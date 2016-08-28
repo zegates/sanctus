@@ -28,11 +28,13 @@ public class LogUser implements Serializable {
     private String uuid;
 
     public String getUuid() {
+        if(uuid == null)
+            return getUid() + "";
         return uuid;
     }
 
     public void setUuid(String uuid) {
-        this.uuid = uuid.toString();
+        this.uuid = uuid;
     }
     @OneToMany(mappedBy = "logUser",fetch = FetchType.EAGER)
     @XmlIDREF

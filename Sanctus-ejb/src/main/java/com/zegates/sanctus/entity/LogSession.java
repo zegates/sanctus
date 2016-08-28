@@ -24,6 +24,8 @@ public class LogSession implements Serializable {
     private String uuid;
 
     public String getUuid() {
+        if(uuid == null)
+            return getSeid() + "";
         return uuid;
     }
 

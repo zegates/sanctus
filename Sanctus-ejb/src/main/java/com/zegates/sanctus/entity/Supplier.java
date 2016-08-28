@@ -4,9 +4,11 @@
  */
 package com.zegates.sanctus.entity;
 
-import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
-
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlID;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -16,10 +18,26 @@ import java.util.List;
  * @author Sandaruwan
  */
 @Entity
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Supplier implements Serializable {
 
+    @XmlAttribute
+    @XmlID                    // should be unique across all entities.
+    @Transient
+    private String uuid;
+
+    public String getUuid() {
+        if(uuid == null)
+            return getSuid() + "";
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
     @OneToMany(mappedBy = "supplier")
-    @XmlInverseReference(mappedBy="supplier")
+//    @XmlInverseReference(mappedBy="supplier")
     private List<SupplyOrder> supplyOrders;
     private static final long serialVersionUID = 1L;
     @Id
